@@ -2,12 +2,9 @@ import asyncio
 import logging
 from typing import Dict, Generator, Optional
 
-import nest_asyncio
-
 from .duckduckgo_search_async import AsyncDDGS
 
 logger = logging.getLogger("duckduckgo_search.DDGS")
-nest_asyncio.apply()
 
 
 class DDGS(AsyncDDGS):
